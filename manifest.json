@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "dark-for-eyes",
+  "description": "dark-for-eyes v0.1",
+  "version": "0.1",
+  "action": {
+    "default_popup": "home.html",
+    "default_icon": "logo.png"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],    
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
